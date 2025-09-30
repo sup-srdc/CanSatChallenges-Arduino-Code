@@ -30,12 +30,12 @@
   uint8_t flag_read_Mag      = SET;
   uint8_t flag_read_GPS      = SET;
   uint8_t flag_read_Temp     =  SET;
-  uint8_t flag_read_Alt      =  RESET;
+  uint8_t flag_read_Alt      =  SET;
   uint8_t flag_read_Pressure = SET;
 
   unsigned long sent_pkt_count, dropped_pkt_count, tic_status_msg, toc_status_msg, toc;
   unsigned long tic_env, tic_Alt, tic_GPS;
-  unsigned long T_env = 2000, T_Alt = 10, T_GPS = 1000, T_status_msg;
+  unsigned long T_env = 2000, T_Alt = 1000, T_GPS = 1000, T_status_msg;
   uint8_t ref_alt = 217;                   // Lahore's Altitude with reference to Sea Level
 
 
